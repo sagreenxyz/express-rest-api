@@ -14,9 +14,22 @@ app.get('/new', (req, res) => {
     res.send('redirected to this route')
 })
 
-app.get('/', (req, res) => {
-    res.send(req.method + req.url)
-})
+app
+    .get('/', (req, res) => {
+        res.send(req.method + req.url)
+    })
+    .post('/', (req, res) => {
+        
+    })
+    .patch('/', (req, res) => {
+        
+    })
+    .put('/', (req, res) => {
+        
+    })
+    .delete('/', (req, res) => {
+        
+    })
 
 app.listen(PORT, (err) => {
     if(err) {
